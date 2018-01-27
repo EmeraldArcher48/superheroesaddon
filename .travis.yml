@@ -15,6 +15,7 @@ branches:
   
 deploy:
   provider: releases
-  api_key: "$oauth"
+  api_key:
+    secure: $api_key
   file: "build/libs/SuperheroesAddon-1.1.jar"
   skip_cleanup: true
