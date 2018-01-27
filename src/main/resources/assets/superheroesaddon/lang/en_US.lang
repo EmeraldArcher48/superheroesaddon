@@ -1,0 +1,41 @@
+----- Creative Tab -----
+itemGroup.SuperheroesAddon=Fisk's Superheroes Addon
+
+----- Heroes -----
+hero.superheroesaddon.accelerated_man.name=Accelerated Man
+hero.superheroesaddon.cyclops.name=Cyclops
+hero.superheroesaddon.quicksilver.name=Quicksilver
+hero.superheroesaddon.savitar.name=Savitar
+hero.superheroesaddon.spiderman.name=Spider-Man
+hero.superheroesaddon.superman.name=Superman
+hero.superheroesaddon.ultron.name=Ultron
+hero.superheroesaddon.winter_soldier.name=The Winter Soldier
+hero.superheroesaddon.black_flash.name=Black Flash
+hero.superheroesaddon.wolverine.name=The Wolverine
+
+----- Abilities -----
+ability.superheroesaddon.web_slinging.name=Web-Slinging
+ability.superheroesaddon.flight.name=Flight
+ability.superheroesaddon.cold_breath.name=Cold Breath
+ability.superheroesaddon.wall_climb.name=Wall-Climb
+ability.superheroesaddon.energy_beam.name=Laser Beam
+ability.superheroesaddon.claws.name=Adamantium Claws
+ability.superheroesaddon.wall_run.name=Wall Running
+ability.superheroesaddon.vibe_energy_wave.name=Vibe Wave
+ability.superheroesaddon.vibing.name=Vibing
+ability.superheroesaddon.spider_sense.name=Spider-Sense
+ability.superheroesaddon.phasing.name=Phasing
+ability.superheroesaddon.lightning_throw.name=Lightning Throw
+ability.superheroesaddon.lead_sight.name=Lead Sight
+
+----- Keybinds -----
+key.web-slinging=Web-Slinging
+
+----- Weaknesses -----
+weakness.superheroesaddon.high_pitch.name=High Pitched Sounds
+
+----- Blocks -----
+tile.speed_dampener.name=Speed Dampener
+
+----- Items -----
+item.reverse_flash_emblem.name=Reverse-Flash Emblem

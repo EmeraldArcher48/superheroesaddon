@@ -1,0 +1,16 @@
+[
+{
+  "modid": "superheroesaddon",
+  "name": "Superheroes Addon",
+  "description": "Extend your minecraft heroes universe with this mod!",
+  "version": "1.0",
+  "mcversion": "1.7.10",
+  "url": "https://discord.gg/tvW6TZz",
+  "updateUrl": "",
+  "authorList": ["ImranDoet, FiskFillet"],
+  "credits": "FiskFille, Lucraft",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": ["fiskheroes"]
+}
+]
