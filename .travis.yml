@@ -9,6 +9,10 @@ before_install:
 install: ./gradlew setupciworkspace -S
 script: ./gradlew build -S
 
+branches:
+  only:
+  - master
+
 deploy:
   provider: releases
   api_key: $oauth_key
@@ -16,3 +20,4 @@ deploy:
   skip_cleanup: true
   on:
     tags: true
+    all_branches: true
