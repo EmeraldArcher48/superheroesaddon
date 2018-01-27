@@ -1,2 +1,1 @@
-
-mvn deploy:deploy-file -DgroupId=net.zoutepopcorn -DartifactId=core-plugin -Dversion=1.0 -DgeneratePom=false -Dpackaging=jar -DrepositoryId=nexus -Durl=http://gitlab.zoutepopcorn.net:8081/nexus/content/repositories/zp-public/ -DpomFile=pom.xml -Dfile=target/Core-1.0.j
+### Hello!
