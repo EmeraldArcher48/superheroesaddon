@@ -17,5 +17,5 @@ deploy:
   provider: releases
   user: "$username"
   password: "$password"
-  file: SuperheroesAddon-1.1.jar
+  file: "SuperheroesAddon-1.1.jar"
   skip_cleanup: true
