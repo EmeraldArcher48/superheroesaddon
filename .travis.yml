@@ -18,4 +18,5 @@ deploy:
   api_key:
     secure: $api_key
   file: "build/libs/SuperheroesAddon-1.1.jar"
+  name: "SuperheroesAddon-$modversion"
   skip_cleanup: true
