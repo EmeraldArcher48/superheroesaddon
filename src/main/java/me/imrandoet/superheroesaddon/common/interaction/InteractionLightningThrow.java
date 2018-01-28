@@ -5,6 +5,7 @@ import fiskfille.heroes.common.data.Cooldowns;
 import fiskfille.heroes.common.data.SHData;
 import fiskfille.heroes.common.interaction.EnumInteraction;
 import fiskfille.heroes.common.interaction.InteractionBase;
+import fiskfille.heroes.helper.SHHelper;
 import me.imrandoet.superheroesaddon.common.entity.EntityLightning;
 import net.minecraft.entity.player.EntityPlayer;
 
@@ -20,7 +21,7 @@ public class InteractionLightningThrow extends InteractionBase {
 
     @Override
     public boolean serverRequirements(EntityPlayer player, EnumInteraction.InteractionType type, int x, int y, int z) {
-        return true;
+        return SHHelper.getHero(player) != null && SHHelper.isSpeedster(player);
     }
 
     @Override

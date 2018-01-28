@@ -53,33 +53,33 @@ public class CommonEventHandler {
             Hero hero = SHHelper.getHero(ep);
             if (e.phase == TickEvent.Phase.END) {
                 if (SHHelper.isSpeedster(ep)) {
-                    if (SHData.SPEEDING.get(ep)) {
-                        int trueSpeedLevel = (SHData.SPEED.get(ep) + 1);
-                        if (trueSpeedLevel >= 16) {
-                            if (!ep.worldObj.isRemote) {
-                                if (!SUHData.BLACK_FLASH.get(ep)) {
-                                    if (ep.ticksExisted >= 200) {
-                                        EntityBlackFlash entityBlackFlash = new EntityBlackFlash(ep.worldObj);
-                                        entityBlackFlash.setAttackTarget(ep);
-                                        SHData.SPEEDING.set(entityBlackFlash, true);
-                                        SHData.SPEED.set(entityBlackFlash, (byte) trueSpeedLevel);
-                                        Random rand = new Random();
-                                        double x = 25 + rand.nextInt((50 - 25) + 1);
-                                        double y = 25 + rand.nextInt((50 - 25) + 1);
-                                        double z = 25 + rand.nextInt((50 - 25) + 1);
-                                        entityBlackFlash.setLocationAndAngles(ep.posX + x, ep.posY + y, ep.posZ + z, ep.rotationYaw, ep.rotationPitch);
-                                        entityBlackFlash.setCurrentItemOrArmor(1, new ItemStack(HeroManager.BLACK_FLASH.getHelmet()));
-                                        entityBlackFlash.setCurrentItemOrArmor(2, new ItemStack(HeroManager.BLACK_FLASH.getChestplate()));
-                                        entityBlackFlash.setCurrentItemOrArmor(3, new ItemStack(HeroManager.BLACK_FLASH.getLeggings()));
-                                        entityBlackFlash.setCurrentItemOrArmor(4, new ItemStack(HeroManager.BLACK_FLASH.getBoots()));
-                                        ep.worldObj.spawnEntityInWorld(entityBlackFlash);
-                                        entityBlackFlash.onSpawnWithEgg(null);
-                                        SUHData.BLACK_FLASH.set(ep, true);
-                                    }
-                                }
-                            }
-                        }
-                    }
+//                    if (SHData.SPEEDING.get(ep)) {
+//                        int trueSpeedLevel = (SHData.SPEED.get(ep) + 1);
+//                        if (trueSpeedLevel >= 16) {
+//                            if (!ep.worldObj.isRemote) {
+//                                if (!SUHData.BLACK_FLASH.get(ep)) {
+//                                    if (ep.ticksExisted >= 200) {
+//                                        EntityBlackFlash entityBlackFlash = new EntityBlackFlash(ep.worldObj);
+//                                        entityBlackFlash.setAttackTarget(ep);
+//                                        SHData.SPEEDING.set(entityBlackFlash, true);
+//                                        SHData.SPEED.set(entityBlackFlash, (byte) trueSpeedLevel);
+//                                        Random rand = new Random();
+//                                        double x = 25 + rand.nextInt((50 - 25) + 1);
+//                                        double y = 25 + rand.nextInt((50 - 25) + 1);
+//                                        double z = 25 + rand.nextInt((50 - 25) + 1);
+//                                        entityBlackFlash.setLocationAndAngles(ep.posX + x, ep.posY + y, ep.posZ + z, ep.rotationYaw, ep.rotationPitch);
+//                                        entityBlackFlash.setCurrentItemOrArmor(1, new ItemStack(HeroManager.BLACK_FLASH.getHelmet()));
+//                                        entityBlackFlash.setCurrentItemOrArmor(2, new ItemStack(HeroManager.BLACK_FLASH.getChestplate()));
+//                                        entityBlackFlash.setCurrentItemOrArmor(3, new ItemStack(HeroManager.BLACK_FLASH.getLeggings()));
+//                                        entityBlackFlash.setCurrentItemOrArmor(4, new ItemStack(HeroManager.BLACK_FLASH.getBoots()));
+//                                        ep.worldObj.spawnEntityInWorld(entityBlackFlash);
+//                                        entityBlackFlash.onSpawnWithEgg(null);
+//                                        SUHData.BLACK_FLASH.set(ep, true);
+//                                    }
+//                                }
+//                            }
+//                        }
+//                    }
                 }
             }
         }

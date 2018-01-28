@@ -4,8 +4,10 @@ import cpw.mods.fml.relauncher.Side;
 import fiskfille.heroes.common.data.Cooldowns;
 import fiskfille.heroes.common.interaction.EnumInteraction;
 import fiskfille.heroes.common.interaction.InteractionBase;
+import fiskfille.heroes.helper.SHHelper;
 import me.imrandoet.superheroesaddon.common.abilities.Abilities;
 import me.imrandoet.superheroesaddon.common.entity.EntityWebSlingArrow;
+import me.imrandoet.superheroesaddon.common.heroes.Spiderman;
 import net.minecraft.entity.player.EntityPlayer;
 
 /**
@@ -20,7 +22,7 @@ public class InteractionWebSlinging extends InteractionBase {
 
     @Override
     public boolean serverRequirements(EntityPlayer entityPlayer, EnumInteraction.InteractionType interactionType, int x, int y, int z) {
-        return entityPlayer.getHeldItem() == null;
+        return SHHelper.getHero(entityPlayer) != null && entityPlayer.getHeldItem() == null && SHHelper.getHero(entityPlayer) instanceof Spiderman;
     }
 
     @Override
