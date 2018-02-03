@@ -13,10 +13,13 @@ import net.minecraft.item.Item;
 public class SUHItems {
 
     public static Item reverseFlashEmblem;
+    public static Item kryptonite;
 
     public static void init() {
         reverseFlashEmblem = new Item().setTextureName("superheroesaddon:reverse_flash_emblem");
+        kryptonite = new ItemKryptonite();
         registerItemNoTab(reverseFlashEmblem, "reverse_flash_emblem");
+        registerItem(kryptonite, "kryptonite");
     }
 
     public static void registerItem(Item item, String unlocalizedName)

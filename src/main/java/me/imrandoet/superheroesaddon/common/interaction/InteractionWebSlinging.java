@@ -22,7 +22,7 @@ public class InteractionWebSlinging extends InteractionBase {
 
     @Override
     public boolean serverRequirements(EntityPlayer entityPlayer, EnumInteraction.InteractionType interactionType, int x, int y, int z) {
-        return SHHelper.getHero(entityPlayer) != null && entityPlayer.getHeldItem() == null && SHHelper.getHero(entityPlayer) instanceof Spiderman;
+        return SHHelper.getHero(entityPlayer) != null && entityPlayer.getHeldItem() == null && SHHelper.getHero(entityPlayer).hasAbility(Abilities.WEB_SLINGING);
     }
 
     @Override

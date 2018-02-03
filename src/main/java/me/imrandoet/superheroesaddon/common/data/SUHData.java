@@ -19,6 +19,7 @@ public class SUHData<T> extends SHData {
     public static SHData<Boolean> BLACK_FLASH = new SUHData<Boolean>(false).setExempt(RESET);
     public static SHData<Boolean> COLD_BREATH = new SUHData<Boolean>(false).setExempt(RESET);
     public static SHData<Boolean> CLAWS = new SUHData<Boolean>(false).setExempt(RESET);
+    public static SHData<Boolean> ENERGY_BEAM = new SUHData<Boolean>(false).setExempt(RESET);
 
     protected SUHData(DataFactory<T> defaultVal, Predicate<Entity> p) {
         super(defaultVal, p);

@@ -13,6 +13,7 @@ import net.minecraft.util.ResourceLocation;
 public class SUHBlocks {
 
     public static Block blockSpeedDampener;
+    public static Block blockKryptoniteOre;
 
     private static void registerBlockTileEntity(Block block, String name, Class clazzzzz, String textureName) {
         registerBlock(block, name, textureName);
@@ -30,7 +31,8 @@ public class SUHBlocks {
     public static void init() {
         blockSpeedDampener = new BlockSpeedDampener().setHardness(4.5F).setResistance(5.0F).setStepSound(Block.soundTypeMetal).setCreativeTab(SuperheroesAddon.tab);
         registerBlockTileEntity(blockSpeedDampener, "Speed Dampener", TileEntitySpeedDampener.class, "speed_dampener");
-
+        blockKryptoniteOre = new BlockKryptoniteOre();
+        registerBlock(blockKryptoniteOre, "Kryptonite Ore", "kryptonite_ore");
     }
 
 }

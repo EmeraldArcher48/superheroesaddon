@@ -38,6 +38,9 @@ public class ClientEventHandler {
                 if (hero.getAbilities().contains(Abilities.COLD_BREATH)) {
                     SUHData.COLD_BREATH.set(ep, SHKeyBinds.ABILITY_2.getIsKeyPressed());
                 }
+                if (hero.getAbilities().contains(Abilities.ENERGY_BEAM)) {
+                    SUHData.ENERGY_BEAM.set(ep, SHKeyBinds.ABILITY_5.getIsKeyPressed());
+                }
             }
         }
     }

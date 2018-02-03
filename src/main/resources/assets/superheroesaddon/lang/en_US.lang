@@ -36,6 +36,7 @@ weakness.superheroesaddon.high_pitch.name=High Pitched Sounds
 
 ----- Blocks -----
 tile.speed_dampener.name=Speed Dampener
+tile.kryptonite_ore.name=Kryptonite Ore
 
 ----- Items -----
 item.reverse_flash_emblem.name=Reverse-Flash Emblem
