@@ -5,7 +5,6 @@ import fiskfille.heroes.common.ability.Ability;
 import fiskfille.heroes.common.hero.Hero;
 import fiskfille.heroes.common.hero.IAbility;
 import fiskfille.heroes.common.item.armor.ItemHeroArmor;
-import me.imrandoet.superheroesaddon.common.abilities.interfaces.IEnergyBeam;
 import me.imrandoet.superheroesaddon.common.abilities.interfaces.IWebSlinging;
 
 import java.lang.reflect.Field;
@@ -30,7 +29,6 @@ public class Abilities {
     public static Ability<IAbility> FLIGHT = new AbilityFlight(5);
     public static Ability<IAbility> COLD_BREATH = new AbilityColdBreath(4);
     public static Ability<IAbility> WALL_CLIMB = new Ability<IAbility>(4);
-    public static Ability<IEnergyBeam> ENERGY_BEAM = new AbilityEnergyBeam(2);
     public static Ability<IAbility> CLAWS = new Ability<IAbility>(4);
     public static Ability<IAbility> WALL_RUN = new Ability<IAbility>(5);
     public static Ability<IAbility> VIBE_ENERGY_WAVE = new Ability<IAbility>(5);
@@ -52,7 +50,6 @@ public class Abilities {
         Ability.register("superheroesaddon:flight", FLIGHT);
         Ability.register("superheroesaddon:cold_breath", COLD_BREATH);
         Ability.register("superheroesaddon:wall_climb", WALL_CLIMB);
-        Ability.register("superheroesaddon:energy_beam", ENERGY_BEAM);
         Ability.register("superheroesaddon:claws", CLAWS);
         Ability.register("superheroesaddon:wall_run", WALL_RUN);
         Ability.register("superheroesaddon:vibe_energy_wave", VIBE_ENERGY_WAVE);

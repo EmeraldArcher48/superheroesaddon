@@ -1,21 +1,23 @@
 package me.imrandoet.superheroesaddon.common.heroes;
 
+import fiskfille.heroes.common.ability.Ability;
 import fiskfille.heroes.common.ability.IAbilityContainer;
 import fiskfille.heroes.common.entity.attribute.IAttributeContainer;
 import fiskfille.heroes.common.entity.attribute.SHAttributes;
 import fiskfille.heroes.common.hero.Hero;
+import fiskfille.heroes.common.hero.IHeatVision;
 import fiskfille.heroes.common.item.armor.ItemHeroArmor;
 import fiskfille.heroes.common.keybinds.SHKeyBinding;
 import fiskfille.heroes.common.keybinds.SHKeyBinds;
 import me.imrandoet.superheroesaddon.SuperheroesAddon;
 import me.imrandoet.superheroesaddon.common.abilities.Abilities;
-import me.imrandoet.superheroesaddon.common.abilities.interfaces.IEnergyBeam;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemStack;
 
 /**
  * Created by ImranDoet on 1-7-2017.
  */
-public class Cyclops extends Hero implements IEnergyBeam {
+public class Cyclops extends Hero implements IHeatVision {
 
     @Override
     public void init() {
@@ -43,7 +45,7 @@ public class Cyclops extends Hero implements IEnergyBeam {
     @Override
     public void getAbilities(IAbilityContainer abilities) {
         super.getAbilities(abilities);
-        abilities.add(this, Abilities.ENERGY_BEAM);
+        abilities.add(this, Ability.HEAT_VISION);
     }
 
     @Override
@@ -55,8 +57,13 @@ public class Cyclops extends Hero implements IEnergyBeam {
     }
 
     @Override
-    public SHKeyBinding getEergyBeamKey() {
+    public SHKeyBinding getHeatVisionKey() {
         return SHKeyBinds.ABILITY_5;
+    }
+
+    @Override
+    public int getHeatVisionColor(EntityLivingBase entityLivingBase) {
+        return 16711680;
     }
 
     //    @Override

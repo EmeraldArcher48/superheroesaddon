@@ -13,7 +13,7 @@ public class RenderManager {
 
     public static void register() {
         HeroRenderer.register(HeroManager.ACCELERATED_MAN, new HeroRendererBase());
-        HeroRenderer.register(HeroManager.CYCLOPS, new HeroRendererBase());
+        HeroRenderer.register(HeroManager.CYCLOPS, new HeroRendererCyclops());
         HeroRenderer.register(HeroManager.QUICKSILVER, new HeroRendererBase());
         HeroRenderer.register(HeroManager.SAVITAR, new HeroRendererBase());
         HeroRenderer.register(HeroManager.SPIDERMAN, new HeroRendererBase().setMasked(true));

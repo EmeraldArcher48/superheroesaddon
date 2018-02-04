@@ -2,6 +2,7 @@ package me.imrandoet.superheroesaddon.common.event;
 
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.gameevent.TickEvent;
+import fiskfille.heroes.common.data.SHData;
 import fiskfille.heroes.common.hero.Hero;
 import fiskfille.heroes.common.keybinds.SHKeyBinds;
 import fiskfille.heroes.helper.SHHelper;
@@ -37,9 +38,6 @@ public class ClientEventHandler {
                 }
                 if (hero.getAbilities().contains(Abilities.COLD_BREATH)) {
                     SUHData.COLD_BREATH.set(ep, SHKeyBinds.ABILITY_2.getIsKeyPressed());
-                }
-                if (hero.getAbilities().contains(Abilities.ENERGY_BEAM)) {
-                    SUHData.ENERGY_BEAM.set(ep, SHKeyBinds.ABILITY_5.getIsKeyPressed());
                 }
             }
         }

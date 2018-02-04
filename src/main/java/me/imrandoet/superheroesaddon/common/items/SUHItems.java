@@ -17,7 +17,7 @@ public class SUHItems {
 
     public static void init() {
         reverseFlashEmblem = new Item().setTextureName("superheroesaddon:reverse_flash_emblem");
-        kryptonite = new ItemKryptonite();
+        kryptonite = new ItemKryptonite().setTextureName("superheroesaddon:kryptonite");
         registerItemNoTab(reverseFlashEmblem, "reverse_flash_emblem");
         registerItem(kryptonite, "kryptonite");
     }
