@@ -1,4 +1,4 @@
-# SuperheroesAddon [![Build Status](https://travis-ci.org/ImranDoet/superheroesaddon.svg?branch=master)]
+# SuperheroesAddon [!Build Status(https://travis-ci.org/ImranDoet/superheroesaddon.svg?branch=master)]
 
 If you want to contribute. Feel free to. But please don't break things..
 
